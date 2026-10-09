@@ -55,9 +55,7 @@ export const PeopleTable: React.FC<Props> = ({ people, selectedPerson }) => {
               <span className="is-flex is-flex-wrap-nowrap">
                 {field.charAt(0).toUpperCase() + field.slice(1)}
                 <SearchLink params={getSortParams(field)}>
-                  <span className="icon">
-                    {renderSortIcon(field)}
-                  </span>
+                  <span className="icon">{renderSortIcon(field)}</span>
                 </SearchLink>
               </span>
             </th>
